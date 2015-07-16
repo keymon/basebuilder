@@ -11,6 +11,7 @@ env     locale-gen en_US.UTF-8
 env     LANG en_US.UTF-8
 env     LANGUAGE en_US:en
 env     LC_ALL en_US.UTF-8
+run sleep 120
 run	apt-get update
 run	apt-get install wget -y --force-yes
 run	wget http://github.com/tsuru/basebuilder/tarball/master -O basebuilder.tar.gz --no-check-certificate
